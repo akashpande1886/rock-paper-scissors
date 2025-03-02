@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="rpc.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="game">
+        <h1 class="title">Rock Paper Scissors</h1>
+
+        <button onclick="playGame('Rock');" class="move-button"><img src="images/rock.png" class="move-icon"></button>
+        <button onclick="playGame('Paper');" class="move-button"><img src="images/paper.png" class="move-icon"></button>
+        <button onclick="playGame('Scissors');" class="move-button"><img src="images/scissors.png" class="move-icon"></button>
+        <div class="result">
+            <p class="js-result"></p>
+        </div>
+        <div class="moves">
+            <p class="js-moves move-icon"></p>
+        </div>
+        <div class="score">
+            <p class="js-score"></p>
+        </div>
+
+        <button onclick="reset()" class="reset-button">Reset Score</button>
+    </div>
+    <script src="rpc.js">
+
+
+
+    </script>
+</body>
+
+</html>
