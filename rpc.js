@@ -15,7 +15,7 @@ function reset() {
 }
 
 function playGame(playerMove) {
-  playerMove = autoPickPlayerMove();
+  playerMove = pickComputerMove();
   const computerMove = pickComputerMove();
   let result = "";
   if (playerMove === "scissors") {
@@ -86,20 +86,7 @@ function pickComputerMove() {
   }
   return computerMove;
 }
-function autoPickPlayerMove() {
-  const randomNumber = Math.random();
-  let playerMove = "";
 
-  if (randomNumber >= 0 && randomNumber <= 1 / 3) {
-    playerMove = "rock";
-  } else if (randomNumber > 1 / 3 && randomNumber <= 2 / 3) {
-    playerMove = "paper";
-  } else {
-    playerMove = "scissors";
-  }
-  // console.log(playerMove)
-  return playerMove;
-}
 
 let intervalId; // Store interval ID globally
 
